@@ -4,7 +4,7 @@ const path = require('path');
 function createMainWindow() {
   const win = new BrowserWindow({
     width: 800,
-    heig0valeuuuht: 600,
+    height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true
@@ -17,7 +17,7 @@ function createMainWindow() {
 function createPreviewWindow(audioDataUrl) {
   const win = new BrowserWindow({
     width: 500,
-    height: 200,
+    height: 400,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true
@@ -36,6 +36,7 @@ ipcMain.on('open-preview', (event, audioDataUrl) => {
 });
 
 app.whenReady().then(createMainWindow);
+
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });

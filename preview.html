@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Pré-visualização do Áudio</title>
+  <title>Prévia da Gravação</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h2>🔊 Áudio Gravado</h2>
-  <audio id="player" controls></audio>
+  <h1>Prévia do Áudio Gravado</h1>
+  <audio id="audio-player" controls></audio>
+
   <script src="preview.js"></script>
 </body>
 </html>
