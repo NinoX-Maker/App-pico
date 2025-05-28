@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const statusMessage = document.getElementById('statusMessage');
 
 startButton.addEventListener('click', async () => {
@@ -38,7 +38,6 @@ stopButton.addEventListener('click', () => {
     // Pode também limpar a mensagem aqui se quiser:
     // statusMessage.textContent = '';
   }
-=======
 const { ipcRenderer } = require('electron');
 let mediaRecorder;
 let recordedChunks = [];
@@ -75,5 +74,4 @@ stopBtn.addEventListener('click', () => {
   mediaRecorder.stop();
   startBtn.disabled = false;
   stopBtn.disabled = true;
->>>>>>> abb30294ebb89c47b9cd89cf311257921ea5444b
 });
